@@ -1,0 +1,303 @@
+/* =======================================
+                Resources
+=========================================*/
+
+@font-face {
+    font-family: 'graphik-medium';
+    src: url('../fonts/Graphik-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'graphik-regular';
+    src: url('../fonts/Graphik-Regular.woff');
+}
+
+@font-face {
+    font-family: 'theinhardt';
+    src: url('../fonts/Theinhardt-Lt.woff');
+}
+
+@font-face {
+    font-family: 'tiempos';
+    src: url('../fonts/TiemposHeadline-Semibold.woff');
+}
+
+/* Colors */
+
+/* 
+
+#2B2C2E
+#9FA2A7
+#27282A
+#848689
+#3D3E41
+#fff
+
+*/
+
+/* =======================================
+                GENERAL
+=========================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* =======================================
+                HEADER
+=========================================*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding-left: 3%;
+    
+}
+
+header > ul > li {
+    margin-right: 5%;
+}
+
+header > ul > li > a {
+    text-decoration: none;
+    font-family: 'graphik-regular';
+    color: #2B2C2E;
+    font-size: 1.3rem;
+}
+
+header > a {
+    text-decoration: none;
+    font-family: 'graphik-medium';
+    color: #2B2C2E;
+    border: 2px solid black;
+    padding: 6px 45px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-right: 4%; 
+}
+
+header > a:hover {
+    color: white;
+    background: #2B2C2E;
+}
+
+header > h1 {
+    font-family: 'tiempos';
+    font-size: 2.8rem;
+}
+
+/* =======================================
+            HEADER:Hero Section
+=========================================*/
+
+.hero img {
+    width: 100%;
+}
+
+.hero h2 {
+    text-align: center;
+    margin-top: 10vh;
+    font-family: 'graphik-regular';
+    font-size: 3rem;
+    color: #2B2C2E;
+    word-spacing: 8px;
+}
+
+/* =======================================
+            Main :Section 1
+=========================================*/
+
+main > section:first-of-type {
+    display: flex;
+    margin: 15vh 10% 15vh 10%;
+}
+
+main > section:first-of-type div:first-of-type p {
+    font-family: 'graphik-medium';
+    padding: 0 10% 0 0;
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+
+main > section:first-of-type div:last-of-type {
+    font-family: 'theinhardt';
+    padding-right: 20%;
+}
+
+main > section:first-of-type div:last-of-type h2 {
+    font-size: 4rem;
+}
+
+main > section:first-of-type div:last-of-type p {
+    color: #9FA2A7;
+}
+
+/* =======================================
+            Main :Section 2
+=========================================*/
+
+main > section:nth-of-type(2) {
+    display: flex;
+    margin: 0 10%;
+}
+
+main > section:nth-of-type(2) div:first-of-type img {
+    width: 80%;
+}
+
+main > section:nth-of-type(2) div:last-of-type h2 {
+    font-family: 'tiempos';
+    font-size: 4rem;
+    margin-bottom: 5vh;
+}
+
+main > section:nth-of-type(2) div:last-of-type h3 {
+    font-family: 'graphik-medium';
+    font-size: 1.8rem;
+    margin: 2.5vh 0;
+}
+
+main > section:nth-of-type(2) div:last-of-type p {
+    font-family: 'theinhardt';
+    color: #9FA2A7;
+    font-size: 1.5rem;
+}
+
+/* =======================================
+            Main :Section 3
+=========================================*/
+
+main > section:nth-of-type(3) {
+    display: flex;
+    background: rgb(241, 241, 244);
+    margin: 15vh 10%;
+    justify-content: space-between;
+    
+}
+
+main > section:nth-of-type(3) div:first-of-type {
+    padding: 5vh 5% 5vh 5%;
+}
+
+main > section:nth-of-type(3) div:first-of-type h2 {
+    font-size: 4rem;
+    font-family: 'tiempos';
+    color: #27282A;
+    margin-bottom: 3vh;
+}
+
+main > section:nth-of-type(3) div:first-of-type ol {
+    color: #848689;
+    font-family: 'theinhardt';
+    margin-left: 10%;
+    margin-bottom: 2vh;
+    font-size: 1.3rem;
+}
+
+main > section:nth-of-type(3) div:last-of-type img {
+    width: 100%;
+    padding-left: 15%;
+}
+
+main > section:nth-of-type(3) div:first-of-type p {
+    color: #848689;
+    font-family: 'theinhardt';
+    font-size: 1.3rem;
+}
+
+/* =======================================
+            Main :Section 4
+=========================================*/
+
+main > section:nth-of-type(4) {
+    margin: 15vh 10%;
+    border-bottom: 1px solid black;
+    
+}
+
+main > section:nth-of-type(4) h2 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'tiempos';
+    margin: 10vh 0;
+    color: #27282A;
+}
+
+main > section:nth-of-type(4) p {
+    font-family: 'theinhardt';
+    text-align: center;
+    font-size: 1.3rem;
+    color: #848689;
+}
+
+
+main > section:nth-of-type(4) > div > img:nth-child(1) {
+    width: 100%;
+    margin-top: 10vh;
+}
+
+main > section:nth-of-type(4) > div > img:nth-child(2) {
+    position: absolute;
+    width: 35%;
+    left: 50%;
+    top: 335%;
+}
+
+main > section:nth-of-type(4) > div p {
+    padding:0 50% 10vh 22%;
+    font-family: 'graphik-medium';
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #9FA2A7;
+    text-align: left;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+/* =======================================
+                Footer
+=========================================*/
+
+footer h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'tiempos';
+}
+
+footer p {
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-family: 'graphik-medium';
+    color: #9FA2A7;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'graphik-medium';
+    color: #2B2C2E;
+}
+
+footer p:before {
+    background-image: url('../img/costume_guy.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 70px; 
+    height: 90px;
+    content:"";
+}
